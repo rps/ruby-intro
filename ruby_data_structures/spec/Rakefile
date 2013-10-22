@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# -*- ruby -*-
+
+require 'rake/clean'
+require 'rake/testtask'
+
+task :default => :test
+
+task :test do
+  ruby 'linked_list_spec.rb'
+end
+
+task :extra do
+  ruby 'path_to_enlightenment_extra.rb'
+end
+
